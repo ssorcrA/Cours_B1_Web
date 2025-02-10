@@ -9,74 +9,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <style>
-       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-:root {
-    --primary-color: #FF6B6B;
-    --secondary-color: #1E3799;
-    --background-gradient: linear-gradient(to right, #6A11CB, #2575FC);
-    --text-color: #ffffff;
-    --card-bg: rgba(255, 255, 255, 0.15);
-    --shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--background-gradient);
-    }
-        .cadre {
-            border: 2px solid #333;
-            padding: 20px;
-            width: auto;
-            margin: 10px;
-            margin-right:10px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-            background: white;
-        }
-        button {
-    background: var(--primary-color);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    outline: none;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Effet de lumière */
-button::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background: rgba(255, 255, 255, 0.3);
-    transition: 0.5s;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0);
-}
-
-button:hover::before {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-button:hover {
-    background: var(--secondary-color);
-    transform: scale(1.05);
-}
-    </style>
+    
+    <link rel="stylesheet" href="Css/Style_Index.css">
+    
     <h1><center>Site de depot de Tp</h1></center>
     <center><button onclick="window.location.href='Tp4/Docs/Mémento.html'">Mémento</button></center>
     <br>
     <center><button onclick="window.location.href='Tp3/Tp3_Balise.html'">Tp3 Balise</button></center>
     <br>
     <center><button onclick="window.location.href='Tp4/Tp4_Lien.html'">Tp4 Lien</button></center>
+    <br>
+    <center><button onclick="window.location.href='Tp5/Tp5_Jeu_du_Memory.html'">Tp5 Jeu du Memory</button></center>
     <body>
     </body>
 </html>

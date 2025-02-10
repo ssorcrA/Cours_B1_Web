@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 10 févr. 2025, 11:36:13
+    Author     : enzor
+*/
+        
+        .cadre {
+            border: 2px solid #333;
+            padding: 20px;
+            width: auto;
+            margin: 10px;
+            margin-right:10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
