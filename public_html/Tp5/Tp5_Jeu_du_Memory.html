@@ -15,38 +15,148 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
      <br>
      <center><button onclick="window.history.back()">Retour</button></center>
 </header>      
+    <link rel="stylesheet" href="Css/css.css">
+    
 <body>
 
     <div class="memory-game">
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/Yeux.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/Yeux.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/angry.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/angry.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/braco.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/braco.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/bulga.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/bulga.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/cote.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/cote.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/gang.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/gang.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/joue.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/joue.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/pp.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/pp.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/regard.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/regard.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/scream.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
-        <div class="card" onclick="flipCard(this)"><div class="card-inner"><div class="front"><img src="Images/scream.jpg" width="100" height="100"></div><div class="back">❓</div></div></div>
+        <div class="card" data-name="Yeux" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/Yeux.jpg" alt="Yeux"></div>
+            </div>
+        </div>
+        <div class="card" data-name="Yeux" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/Yeux.jpg" alt="Yeux"></div>
+            </div>
+        </div>
+        <div class="card" data-name="angry" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/angry.jpg" alt="angry"></div>
+            </div>
+        </div>
+        <div class="card" data-name="angry" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/angry.jpg" alt="angry"></div>
+            </div>
+        </div>
+        <div class="card" data-name="braco" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/braco.jpg" alt="braco"></div>
+            </div>
+        </div>
+        <div class="card" data-name="braco" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/braco.jpg" alt="braco"></div>
+            </div>
+        </div>
+        <div class="card" data-name="bulga" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/bulga.jpg" alt="bulga"></div>
+            </div>
+        </div>
+        <div class="card" data-name="bulga" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/bulga.jpg" alt="bulga"></div>
+            </div>
+        </div>
+        <div class="card" data-name="cote" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/cote.jpg" alt="cote"></div>
+            </div>
+        </div>
+        <div class="card" data-name="cote" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/cote.jpg" alt="cote"></div>
+            </div>
+        </div>
+        <div class="card" data-name="gang" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/gang.jpg" alt="gang"></div>
+            </div>
+        </div>
+        <div class="card" data-name="gang" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/gang.jpg" alt="gang"></div>
+            </div>
+        </div>
+        <div class="card" data-name="joue" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/joue.jpg" alt="joue"></div>
+            </div>
+        </div>
+        <div class="card" data-name="joue" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/joue.jpg" alt="joue"></div>
+            </div>
+        </div>
+        <div class="card" data-name="pp" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/pp.jpg" alt="pp"></div>
+            </div>
+        </div>
+        <div class="card" data-name="pp" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/pp.jpg" alt="pp"></div>
+            </div>
+        </div>
+        <div class="card" data-name="scream" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/scream.jpg" alt="scream"></div>
+            </div>
+        </div>
+        <div class="card" data-name="scream" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/scream.jpg" alt="scream"></div>
+            </div>
+        </div>
+        <div class="card" data-name="regard" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/regard.jpg" alt="regard"></div>
+            </div>
+        </div>
+        <div class="card" data-name="regard" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="back">?</div>
+                <div class="front"><img src="Images/regard.jpg" alt="regard"></div>
+            </div>
+        </div>
     </div>
 
     <script>
-       function flipCard(card) {
-    card.classList.toggle("flip");
-}
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        // Mélanger les cartes au chargement
+        document.addEventListener("DOMContentLoaded", () => {
+            let cards = Array.from(document.querySelectorAll(".card"));
+            cards.forEach(card => {
+                let randomPos = Math.floor(Math.random() * cards.length);
+                card.style.order = randomPos;
+            });
+        });
     </script>
 
 </body>
-
 </html>
 

@@ -11,52 +11,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+}
+
 .memory-game {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-    width: 500px; /* Ajuste si besoin */
-    margin: auto;
+    perspective: 1000px;
+    margin-top: 100px; /* Ajoute un espace entre les boutons et le jeu */
 }
-
+    
 .card {
-    width: 100px; /* Ajuste si besoin */
+    width: 100px;
     height: 100px;
     position: relative;
-    cursor: pointer;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 
-
-.card img, .card .back {
+.card-inner {
     width: 100%;
     height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border-radius: 10px;
-}
-
-.card .back {
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-}
-
-.card.flip {
-    transform: rotateY(180deg);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
 .card .front, .card .back {
@@ -64,12 +54,37 @@ body {
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
 }
 
+.card .back {
+    background-color: gray;
+    color: white;
+}
+
+/* Cacher l'image au départ */
 .card .front {
+    background-color: white;
     transform: rotateY(180deg);
 }
 
-.card img {
+/* Empêcher l'image d'être visible avant le clic */
+.card .front img {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+/* Quand la carte est retournée, afficher l'image */
+.card.flipped .front img {
+    display: block;
+}
+
+.card.flipped .card-inner {
     transform: rotateY(180deg);
 }
