@@ -13,7 +13,66 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
      <br>
      <center><button onclick="window.history.back()">Retour</button></center>
      </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 10vh 80vh 10vh;
+            grid-template-columns: 15% 14% 14% 14% 14% 14% 15%;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .haut {
+            grid-column: 1 / 8;
+            background: none;
+            border: 1px solid black;
+        }
+
+        .gauche {
+            grid-column: 1 / 2;
+            background: none;
+            border: 1px solid black;
+        }
+
+        .milieu {
+            grid-column: 2 / 7;
+            background: none;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .milieu div {
+            border: 1px solid black;
+        }
+
+        .droite {
+            grid-column: 7 / 8;
+            background: none;
+            border: 1px solid black;
+        }
+
+        .bas {
+            grid-column: 1 / 8;
+            background: none;
+            border: 1px solid black;
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="haut">Zone du Haut</div>
+        <div class="gauche">Zone de Gauche</div>
+        <div class="milieu">
+            <div>Z1</div> <div>Z2</div> <div>Z3</div> <div>Z4</div> <div>Z5</div>
+        </div>
+        <div class="droite">Zone de Droite</div>
+        <div class="bas">Zone du bas</div>
+    </div>
+</body>
 </html>

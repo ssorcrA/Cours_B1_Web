@@ -13,7 +13,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
      <br>
      <center><button onclick="window.history.back()">Retour</button></center>
      </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .container {
+            display: grid;
+            grid-template-rows: 10vh auto;
+            grid-template-columns: 20% 80%;
+            height: 100vh;
+        }
+        .header {
+            grid-column: span 2;
+            border: 1px solid black;
+            padding: 1vh;
+        }
+        .sidebar, .main {
+            border: 1px solid black;
+            padding: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Zone du Haut</header>
+        <aside class="sidebar">Zone de Gauche</aside>
+        <main class="main">Zone du Milieu</main>
+    </div>
+</body>
 </html>
+

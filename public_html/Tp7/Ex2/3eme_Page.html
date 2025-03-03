@@ -12,8 +12,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
      <center><button onclick="window.location.href='../index.html'">Acceuil</button></center> 
      <br>
      <center><button onclick="window.history.back()">Retour</button></center>
-     </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+     </head> 
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 85% 15%;
+            height: 100vh;
+        }
+        .left, .right, .bottom {
+            border: 1px solid black;
+            padding: 1vh;
+        }
+        .bottom {
+            grid-column: span 2; /* Prend toute la largeur */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">Gauche</div>
+        <div class="right">Droite</div>
+        <div class="bottom">Bas</div>
+    </div>
+</body>
 </html>
