@@ -16,7 +16,6 @@ h1 {
     font-size: 32px;
 }
 
-
 .devis-container {
     width: 70%;
     margin: auto;
@@ -27,6 +26,11 @@ h1 {
     display: none; /* Masquer le devis initialement */
 }
 
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 150px;
+}
 
 .popup {
     display: none;
@@ -48,36 +52,43 @@ h1 {
     text-align: left;
 }
 
-
 #dateDevis, #validiteDevis {
     font-weight: bold;
     text-align: right;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th, td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
 th {
-    background-color: #E4E7D1;
+    background-color: #5A682E;
+    color: white;
 }
 
+td {
+    background-color: #f9f9f9;
+}
+
+td:nth-child(odd) {
+    background-color: #eef1e6;
+}
 
 .total-section {
     font-weight: bold;
     text-align: right;
     margin-top: 20px;
 }
-
 
 button {
     display: block;
@@ -95,7 +106,6 @@ button:hover {
     background-color: #3E4B1F;
 }
 
-
 #navigation {
     text-align: center;
     margin-bottom: 20px;
@@ -109,10 +119,13 @@ button:hover {
     display: block; 
 }
 
-
 @media print {
     button {
         display: none !important;
+    }
+    
+    h1 {
+        display: block !important;
     }
 
     .devis-container {
@@ -120,5 +133,3 @@ button:hover {
         width: 100%;
     }
 }
-
-
