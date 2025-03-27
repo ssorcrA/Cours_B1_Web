@@ -23,7 +23,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Masquer le devis initialement */
+    display: none;
 }
 
 .logo {
@@ -116,20 +116,22 @@ button:hover {
 }
 
 #openForm {
-    display: block; 
+    display: block;
 }
 
+/* Styles pour l'impression */
 @media print {
     button {
         display: none !important;
     }
     
-    h1 {
+    h1, .devis-container, #devis {
         display: block !important;
     }
-
+    
     .devis-container {
         box-shadow: none;
         width: 100%;
+        background-color: white;
     }
 }
