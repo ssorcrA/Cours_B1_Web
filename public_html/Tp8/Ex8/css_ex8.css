@@ -134,4 +134,8 @@ button:hover {
         width: 100%;
         background-color: white;
     }
+    .devis-fixe{
+        text-align: right;
+       
+    }
 }
