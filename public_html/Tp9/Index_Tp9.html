@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP 9 - Pages Dynamiques</title>
+    <link rel="stylesheet" href="Css_Tp9.css">
+    <script src="Js_Tp9.js" defer></script>
+</head>
+<body>
+    <h1>TP 9 – Rendre dynamiques ses pages web</h1>
+
+    <!-- EXERCICE 1 -->
+    <section id="ex1">
+        <h2>Exercice 1 – Définitions interactives</h2>
+       <p>
+    Le <span class="mot-def" data-mot="html">HTML</span> est un langage de balisage qui permet de structurer les pages web. Il est
+    souvent associé au <span class="mot-def" data-mot="css">CSS</span>, utilisé pour styliser le contenu. Lorsqu'on souhaite
+    rendre une page web interactive, on utilise généralement le <span class="mot-def" data-mot="javascript">JavaScript</span>.
+    Grâce à lui, il est possible de manipuler le <span class="mot-def" data-mot="dom">DOM</span> pour modifier dynamiquement
+    le contenu, sans recharger la page. Cela est particulièrement utile dans les <span class="mot-def" data-mot="spa">applications web monopages</span>
+    comme celles développées avec <span class="mot-def" data-mot="react">React</span> ou <span class="mot-def" data-mot="vue">Vue.js</span>.
+    <br><br>
+    De plus, avec l’émergence du <span class="mot-def" data-mot="webapi">Web API</span>, il devient plus simple d’accéder
+    aux fonctionnalités avancées du navigateur, comme la géolocalisation, le stockage local ou encore les notifications.
+    <span class="mot-def" data-mot="accessibilite">L'accessibilité</span> est aussi un point fondamental dans la création
+    de sites modernes, afin de garantir que tous les utilisateurs, y compris les personnes en situation de handicap,
+    puissent naviguer efficacement. En résumé, le développement web moderne repose sur une synergie entre ces technologies
+    pour offrir des expériences utilisateurs fluides, accessibles et dynamiques.
+</p>
+        <div id="popup-def" class="popup hidden">
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </section>
+
+    <!-- EXERCICE 2 -->
+    <section id="ex2">
+        <h2>Exercice 2 – Formulaire d'inscription</h2>
+        <form id="form-visite">
+            <input type="text" id="nom" placeholder="Nom" required>
+            <input type="text" id="prenom" placeholder="Prénom" required>
+            <select id="bac">
+                <option value="Bac Pro">Bac Pro</option>
+                <option value="STI">STI</option>
+                <option value="STMG">STMG</option>
+                <option value="Général">Général</option>
+            </select>
+            <button type="submit">Valider</button>
+        </form>
+        <table id="table-visiteurs">
+            <thead>
+                <tr><th>Nom</th><th>Prénom</th><th>Bac</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- EXERCICE 3 -->
+    <section id="ex3">
+        <h2>Exercice 3 – Compte à rebours</h2>
+        <p>Final de la ligues des champions de football 2025:</p>
+        <div id="compte-rebours">Chargement...</div>
+    </section>
+
+    <!-- EXERCICE 4 -->
+    <section id="ex4">
+        <h2>Exercice 4 – Calendrier paramétrable</h2>
+        <label>Premier jour :
+            <input type="number" id="jour" min="1" max="7" value="1">
+        </label>
+        <label>Mois :
+            <input type="number" id="mois" min="1" max="12" value="4">
+        </label>
+        <label>Année :
+            <input type="number" id="annee" value="2024">
+        </label>
+        <label>Taille :
+            <select id="taille">
+                <option value="petit">Petit</option>
+                <option value="moyen">Moyen</option>
+                <option value="grand">Grand</option>
+            </select>
+        </label>
+        <label>Couleur :
+            <input type="color" id="couleur" value="#3498db">
+        </label>
+        <button onclick="genererCalendrier()">Générer</button>
+        <div id="calendrier"></div>
+    </section>
+</body>
+</html>
